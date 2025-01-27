@@ -1,0 +1,223 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body{
+  font-family: 'Open Sans', sans-serif;
+  margin-top: 50px!important;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+ background-position: center center;
+ background-image:url('image/backgroundimage.jpg')
+}
+
+.home-icon {
+  margin: 20px 20px;
+  width : 80px;
+	opacity: 0.9;
+}
+
+.search {
+  width: 100%;
+  margin: 30px 10px;
+}
+
+.searchTerm {
+  float: left;
+  width: 80%;
+  border: 3px solid #000000;
+  padding: 5px;
+  height: 36px;
+  border-radius: 5px;
+  outline: none;
+  color: #767577;
+  background-color: white;
+}
+
+.searchTerm:focus{
+  color: #000000;
+}
+
+.searchButton { 
+  right: 30px;
+  width: 40px;
+  height: 36px;
+  border: 1px solid #000000;
+  background: #000000;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.btn{
+  background-color: lightgrey;
+    color: black;
+
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap{
+  width: 33%;
+  position: relative;
+  top: 10%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+}
+.polaroid {
+
+border-radius: 0%;
+
+box-shadow: rgb(0, 0, 0) 0px 0px 10px;
+
+margin: 20px 20px;
+
+
+width: 215px;
+
+background: rgba(255, 255, 255, 1.0) none repeat scroll 0% 0%;
+
+transform: rotate(0deg);
+
+transition: all 0.4s linear 0s;
+
+}
+
+
+.crop {
+	width: 215px; height: 195px; overflow: hidden; display: block;
+	z-index: 2; 
+	position: relative;
+}
+.crop img {
+	width: 175px; height: 175px; margin: 20px auto 0px; max-width: 100%; z-index: 2;
+	position: relative;
+
+display: block;
+
+border-radius: 0;
+
+padding: 0;
+}
+
+
+.figcaption {
+color: rgb(0, 0, 0);
+
+background: rgba(0, 0, 0, 0) none repeat scroll 0% 0%;
+
+font-size: 14px;
+
+text-align: center;
+
+padding: 20px;
+}
+
+.filter-button
+{
+    font-size: 18px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 5px;
+
+ 
+}
+.filter-button:hover
+{
+    font-size: 18px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #000000;
+ 
+}
+.filter-button.active
+{
+    background-color: #000000;
+    color: white;
+}
+
+
+.port-image
+{
+    width: 100%;
+}
+ 
+.gallery_product
+{
+    margin-bottom: 30px;
+}
+
+/* Rotation */
+.rotate {
+  /*-webkit-transition: all 0.5s ease;
+  transition: all 0.2s ease;*/
+}
+ 
+
+@keyframes imageanimation {
+  0% {
+      transform: rotate(-10deg);
+  }
+
+
+
+  100% {
+      transform: rotate(10deg);
+  }
+}
+
+.rotate div[class=polaroid]:hover{
+  /*-webkit-transform: rotate(-15deg);
+  transform: rotate(-15deg);*/
+  animation: imageanimation 1.5s; 
+}
+
+.fa-twitter {
+  color: #2dcffc;
+}
+
+.fa-instagram {
+  color: #7257b2
+}
+
+.fa-pinterest {
+  color: #c61118;
+}
+
+
+ /*--------------------------------------------------------
+5.1  Menu Footer
+--------------------------------------------------------*/
+footer{
+  color: white;
+  text-align: center
+}
+
+#footer-menu {
+	list-style: none;
+	margin: 80px 0 5px;
+  padding:0;
+}
+#footer-menu a {
+  color : white;
+  font-weight: bold;
+
+}
+#footer-menu li {
+	display: inline;
+}
+#footer-menu li:after {
+    font-family: FontAwesome;
+    content: '\f111';
+	margin: 0px 0 0 5px;
+	font-size: 0.5rem;
+	display: inline-block;
+	vertical-align: middle;
+	color: #B6B6B6;
+}
+#footer-menu li:last-child:after {
+ 	display: none;
+}
